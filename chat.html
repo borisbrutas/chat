@@ -5,11 +5,10 @@
 <body>
     <div> 
         {{> appName}}
-        {{loginButtons}}
+        {{loginButtons align="right"}}
     </div>
     {{> messages}}
-    {{> input}} 
-
+    {{> input}}
 </body>
 
 
@@ -26,9 +25,9 @@
 
 <template name="input">
     <input type="textbox" id="txtMessage" />
-    <button id="clear">Clear Messages</button>
 </template>
 
 <template name="appName">
     <h1>Chat App</h1>
 </template>
+
